@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf)
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    background-color: ghostwhite;
+}
+
+#lateral {
+    background-color: #BEC6CE;
+}
+
+h1, h2 {
+    font-family: Montserrat;
+    font-variant: small-caps;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+a[href] {
+    color: steelblue;
+}
+
+.icono {
+    height: 1.5em;
+    margin-right: 0.4em;
+    vertical-align:bottom;
+}
+
+/*NUBE DE TAGS*/
+ul.cloud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+/*Tamaños y colores en función del data-weight*/
+ul.cloud a[data-weight="1"] {
+    --size: 1;
+    color:red;
+}
+ul.cloud a[data-weight="2"] {
+    --size: 2;
+    color:red;
+}
+ul.cloud a[data-weight="3"] {
+    --size: 3;
+    color:tomato;
+}
+ul.cloud a[data-weight="4"] {
+    --size: 4;
+    color:orange;
+}
+ul.cloud a[data-weight="5"] {
+    --size: 5;
+    color: greenyellow;
+}
+ul.cloud a[data-weight="6"] {
+    --size: 6;
+    color:green;
+}
+ul.cloud a[data-weight="7"] {
+    --size: 7;
+    color: steelblue;
+}
+ul.cloud a[data-weight="8"] {
+    --size: 8;
+    color: darkslateblue;
+}
+ul.cloud a[data-weight="9"] {
+    --size: 9;
+    color: darkslateblue;
+}
+ul.cloud a[data-weight="9"] {
+    --size: 10;
+    color: darkslateblue;
+}
+
+ul.cloud a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+    /*Fórmula para el cálculo de tamaños*/
+    --size: 4;
+    font-size: calc(var(--size) * 0.25rem + 0.5rem);
+}
+
+/*DISPOSITIVOS*/
+/*Vertical, tablets y móviles*/
+@media (orientation: portrait) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
