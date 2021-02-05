@@ -18,6 +18,11 @@ section {
     background-color: #BEC6CE;
 }
 
+#contNombre {
+    display:flex;
+    justify-content: space-between;
+}
+
 h1, h2 {
     font-family: Montserrat;
     font-variant: small-caps;
@@ -139,9 +144,8 @@ ul.cloud a {
     }
 
     /*grid items*/
-    #nombre {
+    #contNombre {
         grid-column: 1 / span 2;
-        
     }
 
     #lateral {
