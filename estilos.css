@@ -120,8 +120,16 @@ ul.cloud a {
     }
 }
 
+/*Horizontal, iPad*/
+@media (max-width: 1365px) and (orientation: landscape) {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /*Horizontal, escritorio*/
-@media (orientation: landscape) {
+@media (min-width: 1366px) and (orientation: landscape){
     /*grid container*/
     article {
         width: 50%;
