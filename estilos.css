@@ -28,9 +28,23 @@ h2 {
     border-bottom: 1px solid Sienna;
 }
 
-ul {
+.cloud {
     list-style: none;
     padding-left: 0px;
+}
+
+#perso > ul {
+    list-style-type: none;
+    padding-left: 0em;
+}
+
+#perso > ul > li {
+    margin-top: 0.5em;
+}
+
+#formacion > ul {
+    list-style-type: "- ";
+    padding-left: 1em;
 }
 
 #formacion > ul > li {
