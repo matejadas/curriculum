@@ -135,7 +135,7 @@ ul.cloud a {
     }
 }
 
-/*Horizontal, iPad*/
+/*Horizontal, tablets*/
 @media (max-width: 1365px) and (orientation: landscape) {
     article {
         display: flex;
@@ -143,8 +143,34 @@ ul.cloud a {
     }
 }
 
-/*Horizontal, escritorio*/
-@media (min-width: 1366px) and (orientation: landscape){
+/*Horizontal, escritorio, pantallas pequeñas*/
+@media (min-width: 1366px) and (max-width: 1680px) and (orientation: landscape){
+    /*grid container*/
+    article {
+        width: 50%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    /*grid items*/
+    #contNombre {
+        grid-column: 1 / span 2;
+    }
+
+    #lateral {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #principal {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+/*Horizontal, escritorio, pantallas grandes*/
+@media (min-width: 1681px) and (orientation: landscape){
     /*grid container*/
     article {
         width: 50%;
@@ -168,9 +194,3 @@ ul.cloud a {
         grid-row: 2;
     }
 }
-/*
-TO-DO
-- Resolución iPad
-- Afinar portrait
-- Compartir y descargar en .pdf
-*/
