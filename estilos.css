@@ -53,6 +53,7 @@ h2 {
 
 a[href] {
     color: steelblue;
+    text-decoration: none;
 }
 
 .icono {
