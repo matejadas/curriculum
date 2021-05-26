@@ -1,5 +1,0 @@
-// Inicialización
-window.addEventListener("DOMContentLoaded", () =>{
-
-
-});

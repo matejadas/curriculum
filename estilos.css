@@ -3,7 +3,7 @@
     src: url(fonts/Montserrat/Montserrat-Medium.ttf)
 }
 
-article {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.9em;
     background-color: ghostwhite;
@@ -52,8 +52,15 @@ h2 {
 }
 
 a[href] {
-    color: steelblue;
+    color: navy;
     text-decoration: none;
+}
+
+a[href]:hover {
+    background-color: ghostwhite;
+    color: sienna;
+    border-radius: 4px;
+    padding: 2px;
 }
 
 .icono {
@@ -129,7 +136,7 @@ ul.cloud a {
 /*DISPOSITIVOS*/
 /*Vertical, tablets y móviles*/
 @media (orientation: portrait) {
-    article {
+    body {
         display: flex;
         flex-direction: column;
     }
@@ -137,7 +144,7 @@ ul.cloud a {
 
 /*Horizontal, tablets*/
 @media (max-width: 1365px) and (orientation: landscape) {
-    article {
+    body {
         display: flex;
         flex-direction: column;
     }
@@ -146,7 +153,7 @@ ul.cloud a {
 /*Horizontal, escritorio, pantallas pequeñas*/
 @media (min-width: 1366px) and (max-width: 1680px) and (orientation: landscape){
     /*grid container*/
-    article {
+    body {
         width: 50%;
         margin: 0 auto;
         display: grid;
@@ -172,7 +179,7 @@ ul.cloud a {
 /*Horizontal, escritorio, pantallas grandes*/
 @media (min-width: 1681px) and (orientation: landscape){
     /*grid container*/
-    article {
+    body {
         width: 50%;
         margin: 0 auto;
         display: grid;
