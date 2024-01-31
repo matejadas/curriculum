@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat/Montserrat-Medium.ttf)
+    font-family: Ubuntu;
+    src: url(fonts/Inconsolata/Inconsolata-Regular.ttf)
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.9em;
-    background-color: ghostwhite;
+    background-color: whitesmoke;
     padding: 1em;
 }
 
@@ -19,13 +19,12 @@ section {
 }
 
 h1, h2 {
-    font-family: Montserrat;
-    font-variant: small-caps;
-    color: Sienna;
+    font-family: Ubuntu;
+    color: dodgerblue;
 }
 
 h2 {
-    border-bottom: 1px solid Sienna;
+    border-bottom: 1px solid dodgerblue;
 }
 
 .cloud {
@@ -51,6 +50,15 @@ h2 {
     margin-top: 0.5em;
 }
 
+#experiencia > ul {
+    list-style-type: "- ";
+    padding-left: 1em;
+}
+
+#experiencia > ul > li {
+    margin-top: 0.5em;
+}
+
 a[href] {
     color: navy;
     text-decoration: none;
@@ -58,7 +66,7 @@ a[href] {
 
 a[href]:hover {
     background-color: ghostwhite;
-    color: sienna;
+    color: dodgerblue;
     border-radius: 4px;
     padding: 2px;
 }
