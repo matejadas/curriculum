@@ -138,7 +138,7 @@ ul.cloud a {
     position: relative;
     /*Fórmula para el cálculo de tamaños*/
     --size:4;
-    font-size: calc(var(--size) * 0.25rem);
+    font-size: calc(var(--size) * 0.2rem);
 }
 
 /*DISPOSITIVOS*/
