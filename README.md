@@ -1,2 +1,2 @@
 # Curriculum
-Preparando mi curriculum. Aún en construcción.
+Mi curriculum. En constante actualización.
